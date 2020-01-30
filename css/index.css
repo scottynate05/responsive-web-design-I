@@ -1,3 +1,748 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5, .large-section p {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.page {
+	margin: 0 5% 0 5%;
+}
+
+.top nav {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+}
+
+nav a {
+	color: gray;
+	text-decoration: none;
+}
+
+nav img {
+	display: flex;
+	align-items: flex-end;
+	/* margin: 0 3%; */
+}
+
+header {
+	/* margin: 0 1%; */
+	border-bottom: 1px black solid;
+}
+
+.service-top {
+	margin: 0;
+}
+
+.lrg-txt-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.large-section p {
+	display: flex;
+	justify-content: center;
+	font-size: 75px;
+	text-align: center;
+	align-items: center;
+	width: 10%;
+	margin: 13% 11% 2% 15%;
+}
+
+.large-section img {
+    position: absolute;
+	top: 10%;
+	right: 8%;
+	bottom: 15%;
+    width: 33%;
+    margin-top: 7%;
+}
+
+button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 120px;
+	height: 30px;
+	text-align: center;
+	color: gray;
+	border: 1px black solid;
+	margin: 2% 20% 15% 12%;	
+}
+
+button .box-button {
+	justify-content: flex-start;
+	border-radius: 10px;
+}
+
+.first {
+	display: flex;
+	flex-direction: column;
+	margin: 15px 0;
+}
+
+.first h1 {
+	font-size: 20px;
+}
+
+.large-img {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 2% 0 2% 0;
+}
+
+.two-obj {
+	display: inline-block;
+	width: 45%;
+}
+
+.three-obj {
+	display: inline-block;
+	width: 30%;
+	/* border-bottom: 2px black solid; */
+}
+
+.boxes {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.boxes .box-frame {
+	justify-content: center;
+	height: 15%;
+	width: 45%;
+	margin: 20px;
+	border: 1px solid black;
+	background: lightgray;
+}
+
+.bottom {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.bottom .bottom-text {
+	height: 15%;
+	width: 45%;
+	margin: 20px 2% 20px 2%;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.bottom-list {
+	/* text-decoration: none; */
+	margin: 20px 2% 20px 2%;
+}
+
+.bottom-list a {
+	text-decoration: none;
+	color: black;
+}
+.bottom-img {
+	justify-content: flex-end;
+
+}
+
+/* .bottom-list {
+	display: flex;
+	justify-content: flex-start;
+} */
+
+ /* .top-content {
+	display: inline-block;
+	 width: 50%;
+	font-size: 20px;
+}   */
+
+/*
+.bottom-content {
+	display: inline-block;
+	width: 30%;
+	font-size: 20px;
+	margin: 5% 2% 5% 0;
+	border-bottom: 2px black solid;
+} */
+
+.bottom-image {
+	display: flex;
+	justify-content: flex-end;
+	/* display: inline;
+	position: absolute; */
+	top: 10%;
+	right: 8%;
+	bottom: 15%;
+	width: 30%;
+}
+
+.middle-img {
+	width: 100%;
+	padding: 5% 0;
+}
+
+.features {
+	margin: 1% 20% 5% 0;
+}
+
+.about {
+	margin: 1% 20% 5% 0;
+}
+
+.services {
+	margin: 1% 20% 5% 0;
+}
+
+.product {
+	margin: 1% 20% 5% 0;
+}
+
+.vision {
+	margin: 1% 20% 5% 0;
+}
 
 
+footer {
+	text-align: center;
+	padding: 7%;
+}
+
+.contact p {
+	margin: 2% 0;
+}
+
+.contact h2 {
+	border-top: 1px black solid;
+	margin: 1% 0 0 0;
+}
+    
+@media (max-width: 800px) {
+    .page {
+        margin: 0 5% 0 5%;
+    }
+
+    .top {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 2%;
+    }
+    
+    .top nav {
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .top .logo {
+        display: none;
+        margin: 7%;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    
+    nav a {
+        color: gray;
+        text-decoration: none;
+    }
+    
+    header {
+        /* margin: 0 1%; */
+        border-bottom: 1px black solid;
+    }
+    
+    .service-top {
+        margin: 0;
+    }
+
+    .large-section {
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+        margin: 2% 39% 2% 39%;
+    }
+    
+    .large-section p {
+        display: flex;
+        justify-content: center;
+        font-size: 75px;
+        text-align: center;
+        align-items: center;
+        width: 10%;
+        margin: 15% 11% 2% 15%;
+    }
+    
+    .large-section img {
+        display: none;
+    }
+    
+    .large-section button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 30px;
+        text-align: center;
+        color: gray;
+        border: 1px black solid;
+        margin: 2% 20% 15% 12%;	
+    }
+
+    /* .lrg-txt-button {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    } */
+    
+    button .box-button {
+        justify-content: flex-start;
+        border-radius: 10px;
+    }
+    
+    .first {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0;
+    }
+    
+    .first h1 {
+        font-size: 20px;
+    }
+    
+    .large-img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 2% 0 2% 0;
+    }
+    
+    .two-obj {
+        display: inline-block;
+        width: 45%;
+    }
+    
+    .three-obj {
+        display: inline-block;
+        width: 30%;
+        /* border-bottom: 2px black solid; */
+    }
+    
+    .boxes {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    
+    .boxes .box-frame {
+        justify-content: center;
+        height: 15%;
+        width: 45%;
+        margin: 20px;
+        border: 1px solid black;
+        background: lightgray;
+    }
+    
+    .bottom {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    
+    .bottom .bottom-text {
+        height: 15%;
+        width: 45%;
+        margin: 20px 2% 20px 2%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .bottom-list {
+        /* text-decoration: none; */
+        margin: 20px 2% 20px 2%;
+    }
+    
+    .bottom-list a {
+        text-decoration: none;
+        color: black;
+    }
+    .bottom-img {
+        justify-content: flex-end;
+    
+    }
+    
+    /* .bottom-list {
+        display: flex;
+        justify-content: flex-start;
+    } */
+    
+     /* .top-content {
+        display: inline-block;
+         width: 50%;
+        font-size: 20px;
+    }   */
+    
+    /*
+    .bottom-content {
+        display: inline-block;
+        width: 30%;
+        font-size: 20px;
+        margin: 5% 2% 5% 0;
+        border-bottom: 2px black solid;
+    } */
+    
+    .bottom-image {
+        display: flex;
+        justify-content: flex-end;
+        /* display: inline;
+        position: absolute; */
+        top: 10%;
+        right: 8%;
+        bottom: 15%;
+        width: 30%;
+    }
+    
+    .middle-img {
+        width: 100%;
+        padding: 5% 0;
+    }
+    
+    .features {
+        margin: 1% 20% 5% 0;
+    }
+    
+    .about {
+        margin: 1% 20% 5% 0;
+    }
+    
+    .services {
+        margin: 1% 20% 5% 0;
+    }
+    
+    .product {
+        margin: 1% 20% 5% 0;
+    }
+    
+    .vision {
+        margin: 1% 20% 5% 0;
+    }
+    
+    
+    footer {
+        text-align: center;
+        padding: 7%;
+    }
+    
+    .contact p {
+        margin: 2% 0;
+    }
+    
+    .contact h2 {
+        border-top: 1px black solid;
+        margin: 1% 0 0 0;
+    }
+}
+
+@media (max-width: 500px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .top {
+        display: flex;
+        /* flex-direction: column; */
+        margin-top: 2%;
+        border-width: 100%;
+    }
+    
+    .top nav {
+        justify-content: center;
+        align-items: center;
+        align-content: space-evenly;
+        flex-direction: column-reverse;
+        margin: 1%;
+    }
+
+    .top .logo {
+        display: flex;
+        margin: 7%;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    
+    nav a {
+        justify-content: center;
+        flex-direction: column;
+        color: gray;
+        text-decoration: none;
+        margin: 10px;
+        border-bottom: 1px solid black;
+    }
+    
+    header {
+        /* margin: 0 1%; */
+        border-bottom: 1px black solid;
+    }
+    
+    .service-top {
+        margin: 0;
+    }
+
+    .large-section {
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+    }
+    
+    .large-section p {
+        display: flex;
+        justify-content: center;
+        font-size: 75px;
+        text-align: center;
+        align-items: center;
+        width: 10%;
+        margin: 13% 11% 2% 15%;
+    }
+    
+    .large-section img {
+        display: none;
+    }
+    
+    .large-section button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 30px;
+        text-align: center;
+        color: gray;
+        border: 1px black solid;
+        margin: 2% 20% 15% 12%;	
+    }
+
+    .lrg-txt-button {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    button .box-button {
+        justify-content: flex-start;
+        border-radius: 10px;
+    }
+    
+    .first {
+        display: flex;
+        flex-direction: row;
+        margin: 15px 0;
+    }
+    
+    .first h1 {
+        font-size: 20px;
+    }
+    
+    .large-img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 2% 0 2% 0;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 100%;
+    }
+    
+    .two-obj {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    
+    .three-obj {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        /* border-bottom: 2px black solid; */
+    }
+    
+    .boxes {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    
+    .boxes .box-frame {
+        justify-content: center;
+        height: 15%;
+        width: 45%;
+        margin: 20px;
+        border: 1px solid black;
+        background: lightgray;
+    }
+    
+    .bottom {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    
+    .bottom .bottom-text {
+        height: 15%;
+        width: 45%;
+        margin: 20px 2% 20px 2%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .bottom-list {
+        /* text-decoration: none; */
+        margin: 20px 2% 20px 2%;
+    }
+    
+    .bottom-list a {
+        text-decoration: none;
+        color: black;
+    }
+    .bottom-img {
+        justify-content: flex-end;
+    
+    }
+    
+    /* .bottom-list {
+        display: flex;
+        justify-content: flex-start;
+    } */
+    
+     /* .top-content {
+        display: inline-block;
+         width: 50%;
+        font-size: 20px;
+    }   */
+    
+    /*
+    .bottom-content {
+        display: inline-block;
+        width: 30%;
+        font-size: 20px;
+        margin: 5% 2% 5% 0;
+        border-bottom: 2px black solid;
+    } */
+    
+    .bottom-image {
+        display: flex;
+        justify-content: flex-end;
+        /* display: inline;
+        position: absolute; */
+        top: 10%;
+        right: 8%;
+        bottom: 15%;
+        width: 30%;
+    }
+    
+    .middle-img {
+        width: 100%;
+        padding: 5% 0;
+    }
+    
+    /* .features {
+        margin: 1% 20% 5% 0;
+    }
+    
+    .about {
+        margin: 1% 20% 5% 0;
+    }
+    
+    .services {
+        margin: 1% 20% 5% 0;
+    }
+    
+    .product {
+        margin: 1% 20% 5% 0;
+    }
+    
+    .vision {
+        margin: 1% 20% 5% 0;
+    }
+     */
+    
+    footer {
+        text-align: center;
+        padding: 7%;
+    }
+    
+    .contact p {
+        margin: 2% 0;
+    }
+    
+    .contact h2 {
+        border-top: 1px black solid;
+        margin: 1% 0 0 0;
+    }
+}
